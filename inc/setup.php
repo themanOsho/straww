@@ -16,5 +16,19 @@ function straww_theme_setup() {
     // Register nav menus
     register_nav_menus([
         'primary' => __( 'Primary Menu', 'straww' ),
+        'footer'  => __( 'Footer Menu', 'straww' ),
+        'mobile'  => __( 'Mobile Menu', 'straww' ),
+    ]);
+}
+
+function straww_register_sidebars() {
+    register_sidebar([
+        'name'          => __( 'Sidebar', 'straww' ),
+        'id'            => 'sidebar-1',
+        'description'   => __( 'Main sidebar area', 'straww' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
     ]);
 } 
