@@ -1,8 +1,8 @@
 <?php
-// File: template-parts/content.php
+// File: template-parts/content-page.php
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    <h1><?php echo esc_html( get_the_title() ); ?></h1>
     <div class="entry">
         <?php the_content(); ?>
     </div>
