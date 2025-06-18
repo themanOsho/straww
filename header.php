@@ -14,7 +14,7 @@
 <body <?php body_class(); ?>>
 <a class="skip-link screen-reader-text" href="#main-content"><?php esc_html_e( 'Skip to content', 'straww' ); ?></a>
 <header role="banner">
-    <div class="site-header container">
+    <div class="sw-site-header container">
         <?php if ( has_custom_logo() ) {
             the_custom_logo();
         } else { ?>
