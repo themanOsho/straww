@@ -13,6 +13,7 @@ function straww_theme_setup() {
     add_theme_support( 'automatic-feed-links' );
     add_theme_support( 'html5', [ 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ] );
     add_theme_support( 'woocommerce' );
+    add_theme_support( 'editor-styles' );
 
     // Register nav menus
     register_nav_menus([
@@ -20,6 +21,9 @@ function straww_theme_setup() {
         'footer'  => __( 'Footer Menu', 'straww' ),
         'mobile'  => __( 'Mobile Menu', 'straww' ),
     ]);
+
+    // Load editor styles
+    add_editor_style( 'editor-style.css' );
 }
 
 function straww_register_sidebars() {
