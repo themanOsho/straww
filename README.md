@@ -66,6 +66,18 @@ Pull requests and issues welcome.
 
 GPL-2.0-or-later
 
+# ✅ Code Quality & Validation
+
+- Passed [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) with `WordPress` standard
+- All outputs sanitized using `esc_html()`, `esc_attr()`, `esc_url()`
+- Uses proper hooks, text domain, and template functions
+- Skips deprecated sniffs (future-proofed)
+
+```bash
+phpcs --standard=WordPress .
+phpcbf --standard=WordPress .
+```
+
 ---
 
 > Made with ❤️ for clean WordPress development.
