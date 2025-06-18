@@ -8,14 +8,15 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header>
+<a class="skip-link screen-reader-text" href="#main-content"><?php esc_html_e( 'Skip to content', 'straww' ); ?></a>
+<header role="banner">
     <div class="site-header container">
         <?php if ( has_custom_logo() ) {
             the_custom_logo();
         } else { ?>
             <h1 class="site-title"><a href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a></h1>
         <?php } ?>
-        <nav>
+        <nav role="navigation">
             <?php wp_nav_menu([ 'theme_location' => 'primary' ]); ?>
         </nav>
     </div>
