@@ -12,6 +12,7 @@ function straww_theme_setup() {
     add_theme_support( 'customize-selective-refresh-widgets' );
     add_theme_support( 'automatic-feed-links' );
     add_theme_support( 'html5', [ 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ] );
+    add_theme_support( 'woocommerce' );
 
     // Register nav menus
     register_nav_menus([
@@ -31,4 +32,4 @@ function straww_register_sidebars() {
         'before_title'  => '<h2 class="widget-title">',
         'after_title'   => '</h2>',
     ]);
-} 
+}

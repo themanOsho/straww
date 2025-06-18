@@ -1,12 +1,40 @@
 /*
 Theme Name: Straww
-Theme URI: https://github.com/yourusername/straww
-Author: Your Name
-Author URI: https://yourwebsite.com
+Theme URI: https://github.com/themanosho/straww
+Author: Joshua Osho
+Author URI: https://github.com/themanosho/straww
 Description: A lightweight, modern WordPress theme built with clean OOP principles, full plugin compatibility, and easy customization in mind.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: straww
-Tags: custom-background, custom-logo, custom-menu, featured-images, theme-options
+Tags: custom-background, custom-logo, custom-menu, featured-images, theme-options, e-commerce
 */
+
+/* Basic layout spacing */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+.screen-reader-text {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.screen-reader-text:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 1em 0;
+  clip: auto;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  z-index: 100000;
+}

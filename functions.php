@@ -17,3 +17,6 @@ add_action( 'wp_enqueue_scripts', 'straww_enqueue_assets' );
 
 // Hook customizer
 add_action( 'customize_register', 'straww_customize_register' );
+
+// Register widget areas
+add_action( 'widgets_init', 'straww_register_sidebars' );
