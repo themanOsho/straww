@@ -8,6 +8,8 @@
     <meta name="description" content="<?php echo esc_attr( get_bloginfo('description', 'display') ); ?>">
     <meta name="author" content="<?php echo esc_attr( get_bloginfo('name', 'display') ); ?>">
     <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <?php wp_head(); ?>
 </head>
